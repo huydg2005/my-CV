@@ -1,0 +1,245 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00ffaa;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 80px;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+  color: #00ffaa;
+}
+
+.section {
+  padding: 120px 60px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  image-rendering: auto;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.right {
+  flex: 2;
+  min-width: 300px;
+  padding: 3rem;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #00ffaa;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 48px;
+  margin-top: 2rem;
+}
+
+.socials {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.socials a {
+  margin-right: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #00ffaa;
+}
+
+/* About Me layout */
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00ffaa;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 px 20px;
+}
+
+.about-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+ flex: 1;
+  min-width: 320px;
+  text-align: justify;
+  padding: 20px 40px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #f1f1f1;
+}
+
+.about-text h3 {
+ font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  
+}
+
+.about-text p {
+  line-height: 2;
+  margin-left: -40px; 
+ 
+  padding-right: 40px;
+  font-size: 18px;  
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+   margin-left: -200px;
+}
+
+.about-image img {
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+}
+
+/* Hiệu ứng xuất hiện khi cuộn */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Phần kỹ năng */
+/* Container chứa các kỹ năng */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+/* Mỗi khối kỹ năng */
+.skill-card {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  color: #00ffaa;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  background-color: #3a3a3a;
+  border: 1px solid #00ffaa;
+  box-shadow: 0 6px 20px rgba(0, 255, 170, 0.3);
+}
+
+/* Responsive: xuống hàng khi màn nhỏ */
+@media (max-width: 900px) {
+  .skill-card {
+    width: 100%;
+  }
+}
+
